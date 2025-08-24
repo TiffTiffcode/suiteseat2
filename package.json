@@ -1,0 +1,28 @@
+{
+  "name": "suiteseat2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "",
+  "scripts": {
+    "dev": "nodemon server/local.js",
+    "start": "node server/local.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TiffTiffcode/suiteseat2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TiffTiffcode/suiteseat2/issues"
+  },
+  "homepage": "https://github.com/TiffTiffcode/suiteseat2#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
