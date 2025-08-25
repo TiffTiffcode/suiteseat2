@@ -5,7 +5,7 @@ let cached = global._mongoose;
 if (!cached) cached = global._mongoose = { conn: null, promise: null };
 
 async function dbConnect() {
-  const uri = process.env.MONGODB_URI;            // <-- check here
+  const uri = process.env.MONGODB_URI;        // check here (lazy)
   if (!uri) throw new Error('Missing MONGODB_URI');
 
   if (cached.conn) return cached.conn;
