@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (password.length < 8 || password.length > 64) return alert("Password must be 8–64 characters.");
 
     try {
-      const r = await fetch("/signup/pro", {
+      const r = await fetch("/api/server/signup/pro", {
         method: "POST",
         headers: { "Content-Type": "application/json", "Accept": "application/json" },
         credentials: "include",
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
       password: $("pro-log-in-password")?.value
     };
     try {
-      const r = await fetch("/login", {
+      const r = await fetch("/api/server/login", {
         method: "POST",
         headers: { "Content-Type": "application/json", "Accept": "application/json" },
         credentials: "include",
@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (password.length < 8 || password.length > 64) return alert("Password must be 8–64 characters.");
 
     try {
-      const r = await fetch("/signup", {
+      const r = await fetch("/api/server/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json", "Accept": "application/json" },
         credentials: "include",
@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", () => {
       password: $("client-log-in-password")?.value
     };
     try {
-      const r = await fetch("/login", {
+      const r = await fetch("/api/server/login", {
         method: "POST",
         headers: { "Content-Type": "application/json", "Accept": "application/json" },
         credentials: "include",
